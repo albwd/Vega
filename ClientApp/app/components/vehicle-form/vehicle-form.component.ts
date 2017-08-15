@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vehicle-form.component.css']
 })
 export class VehicleFormComponent implements OnInit {
-  constructor() { 
+  makes;
+  constructor(private makeService: MakeService) { 
   }
 
   ngOnInit() {
+    this.makeService.getMakes().subscribe(makes=>{
+      this.makes = makes});
   }
 
 }
