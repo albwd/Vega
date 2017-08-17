@@ -1,4 +1,4 @@
-import { MakeService } from './services/make.service';
+import { VehicleService } from './services/vehicle.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -15,7 +15,8 @@ import { sharedConfig } from './app.module';
         ...sharedConfig.imports
     ],
     providers: [
-        { provide: 'ORIGIN_URL', useValue: location.origin }, MakeService
+        { provide: 'ORIGIN_URL', useValue: location.origin },
+        VehicleService
     ]
 })
 export class AppModule {
