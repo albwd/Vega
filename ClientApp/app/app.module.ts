@@ -1,8 +1,9 @@
-import { MakeService } from './services/make.service';
-import { VehicleFormComponent } from './components/vehicle-form/vehicle-form.component';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { MakeService } from './services/make.service';
+import { VehicleFormComponent } from './components/vehicle-form/vehicle-form.component';
 import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
@@ -20,6 +21,7 @@ export const sharedConfig: NgModule = {
         VehicleFormComponent
     ],
     imports: [
+        FormsModule,
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'vehicles/new', component: VehicleFormComponent },
