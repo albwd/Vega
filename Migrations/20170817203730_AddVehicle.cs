@@ -20,7 +20,7 @@ namespace Vega.Migrations
                     ContactPhone = table.Column<string>(maxLength: 255, nullable: false),
                     LastUpdate = table.Column<DateTime>(nullable: false),
                     ModelId = table.Column<int>(nullable: false),
-                    idRegistered = table.Column<bool>(nullable: false)
+                    isRegistered = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {

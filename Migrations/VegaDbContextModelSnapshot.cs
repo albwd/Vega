@@ -82,7 +82,7 @@ namespace Vega.Migrations
 
                     b.Property<int>("ModelId");
 
-                    b.Property<bool>("idRegistered");
+                    b.Property<bool>("isRegistered");
 
                     b.HasKey("Id");
 

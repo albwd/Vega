@@ -8,7 +8,7 @@ using Vega.Persistence;
 namespace Vega.Migrations
 {
     [DbContext(typeof(VegaDbContext))]
-    [Migration("20170817175110_AddVehicle")]
+    [Migration("20170817203730_AddVehicle")]
     partial class AddVehicle
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -83,7 +83,7 @@ namespace Vega.Migrations
 
                     b.Property<int>("ModelId");
 
-                    b.Property<bool>("idRegistered");
+                    b.Property<bool>("isRegistered");
 
                     b.HasKey("Id");
 

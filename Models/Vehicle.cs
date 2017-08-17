@@ -12,7 +12,7 @@ namespace Vega.Models
         public int Id { get; set; }
         public int ModelId { get; set; }
         public Model Model { get; set; }
-        public bool idRegistered { get; set; }
+        public bool isRegistered { get; set; }
         [Required]
         [StringLength(255)]
         public string ContactName { get; set; }
