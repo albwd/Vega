@@ -36,6 +36,7 @@ namespace Vega.Controllers
 
             vehicle = await repository.GetVehicle(vehicle.Id);
 
+            vehicle = await repository.GetVehicle(vehicle.Id);
             var result = mapper.Map<Vehicle, SaveVehicleResource>(vehicle);
             return Ok(result);
         }
